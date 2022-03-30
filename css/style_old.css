@@ -1,0 +1,1766 @@
+@font-face {
+  font-family: Avenier-95;
+  src: url(../fonts/AvenirLTStd-Black.otf);
+}
+@font-face {
+  font-family: Avenier-55;
+  src: url(../fonts/AvenirLTStd-Roman.otf);
+}
+html,
+body {
+  font-family: Avenier-95;
+  line-height: 30px;
+  font-size: 20px;
+  color: #3d3d3d;
+  margin: 0;
+  padding: 0;
+}
+input,
+select,
+textarea,
+button {
+  font-family: Avenier-95;
+  transition: 0.3s;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Avenier-95;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.panel {
+  width: 1200px;
+  margin: auto;
+}
+a {
+  transition: 0.3s;
+}
+
+/* Header */
+header {
+  width: calc(100% - 100px);
+  float: left;
+  margin: 0;
+  padding: 35px 50px;
+}
+.logo {
+  width: 280px;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.search-bar {
+  width: 34%;
+  float: right;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+.search-bar input[type="search"] {
+  width: 100%;
+  float: right;
+  margin: 0;
+  padding: 15px 15px 15px 35px;
+  font-size: 16px;
+  color: #000;
+  outline: none;
+  border-radius: 7px;
+  border: solid 1px #d1d1d1;
+}
+.search-bar input[type="search"]::placeholder {
+  color: #b7b7b7;
+}
+.search-bar i {
+  margin: 15px 0 0 10px;
+  display: block;
+  color: #b7b7b7;
+  font-size: 20px;
+  position: absolute;
+}
+nav {
+  width: 490px;
+  float: right;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+nav ul .dropdown {
+  position: relative;
+  display: inline-block;
+}
+nav ul .dropdown-content {
+  display: none;
+  position: absolute;
+  background: #fff;
+  min-width: 200px;
+  box-shadow: 0 3px 6px #00000020;
+  z-index: 1;
+  border-radius: 10px;
+}
+nav ul .dropdown-content a {
+  color: #3d3d3d;
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  line-height: 30px;
+  border-bottom: solid 1px #cccccc;
+}
+nav ul .dropdown-content a:last-child {
+  border-bottom: none;
+}
+nav ul .dropdown-content a:hover {
+  color: #000;
+}
+nav ul .dropdown:hover .dropdown-content {
+  display: block;
+  -webkit-animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  -ms-animation: fadein 1s;
+  -o-animation: fadein 1s;
+  animation: fadein 1s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+nav ul .dropdown .last-meta {
+  margin: 7px 0 0 -100px;
+}
+nav ul .dropdown .dropdown-content span {
+  font-size: 14px;
+  color: #8a8a8a;
+  display: block;
+  text-align: center;
+  padding: 20px;
+  line-height: 18px;
+}
+nav ul .dropdown:hover .dropdown-content .ethereum-meta {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+nav ul .dropdown:hover .dropdown-content .ethereum-meta a {
+  font-size: 14px;
+  color: #a8a8a8;
+  padding: 0;
+}
+nav ul .dropdown:hover .dropdown-content .ethereum-meta a:hover {
+  color: #000000;
+}
+nav ul .dropdown:hover .dropdown-content .ethereum-meta a.active {
+  color: #000000;
+}
+nav ul .dropdown-content button {
+  color: #3d3d3d;
+  padding: 15px;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  border-top: solid 1px #cccccc !important;
+  border: none;
+  margin: 0;
+  border-radius: 0;
+  text-align: left;
+}
+nav ul .dropdown-content button img {
+  vertical-align: middle;
+  margin: 0 5px 0 0;
+}
+nav ul .dropdown-content button:hover {
+  border: none;
+  color: #000;
+}
+nav ul .dropdown-content #eth {
+  margin: 0 0 10px 0;
+}
+nav ul li {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 50px;
+  color: #3d3d3d;
+  padding: 0 15px;
+}
+nav ul li a:hover {
+  color: #000000;
+}
+nav ul li button {
+  border: solid 1px #858585;
+  border-radius: 7px;
+  font-size: 18px;
+  color: #3d3d3d;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: #fff;
+  margin: 0 0 0 10px;
+}
+nav ul li button:hover {
+  border: solid 1px #ba272c;
+  color: #ba272c;
+}
+
+/* Drop of week panel */
+.drop-of-week {
+  float: left;
+  width: 100%;
+  margin: 30px 0 60px 0;
+}
+.drop-of-week .dow-nft-image {
+  float: left;
+  width: 49%;
+}
+.drop-of-week .dow-nft-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+.drop-of-week .dow-nft-image .favorite-drop {
+  background: #ffffff50;
+  padding: 0px 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-family: Avenier-55;
+  position: absolute;
+  margin: 10px 0 0 -80px;
+  box-shadow: 0 0 10px #00000020;
+}
+.drop-of-week .dow-nft-data {
+  float: right;
+  width: 49%;
+}
+.drop-of-week .dow-nft-data h5 {
+  font-size: 25px;
+  color: #ba272c;
+  text-transform: uppercase;
+  margin: 20px 0 0 0;
+}
+.drop-of-week .dow-nft-data h3 {
+  font-size: 40px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 40px 0 0 0;
+}
+.drop-of-week .dow-nft-data h4 {
+  font-size: 20px;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  margin: 5px 0 0 0;
+}
+.drop-of-week .dow-nft-data .vendor-name {
+  font-size: 16px;
+  color: #888888;
+  margin: 5px 0 0 0;
+  font-family: Avenier-55;
+}
+.drop-of-week .dow-nft-data .vendor-name b {
+  color: #000000;
+}
+.drop-of-week .dow-nft-data p {
+  color: #3d3d3d;
+  font-size: 20px;
+  padding: 20px 0 10px 0;
+  margin: 0;
+}
+.drop-of-week .dow-nft-price {
+  width: 100%;
+  float: left;
+  margin: 0 0 20px 0;
+}
+.drop-of-week .dow-nft-price h6 {
+  font-size: 50px;
+  color: #000000;
+  padding: 10px 20px;
+  border: solid 1px #000;
+  border-radius: 5px;
+  float: left;
+}
+.drop-of-week .dow-auction {
+  color: #000000;
+  padding: 10px 20px;
+  border: solid 1px #000;
+  border-radius: 5px;
+  font-size: 20px;
+  float: left;
+  width: 75%;
+}
+.drop-of-week .dow-auction span {
+  display: block;
+  float: left;
+  text-align: center;
+  padding: 0 15px;
+}
+.drop-of-week .dow-auction span b {
+  font-size: 40px;
+  display: block;
+}
+.drop-of-week button {
+  background: #000;
+  font-size: 32px;
+  color: #fff;
+  padding: 15px 20px;
+  border: solid 1px #000;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  margin: 20px 0 0 0;
+}
+.drop-of-week button:hover {
+  background: #fff;
+  color: #000;
+  border: solid 1px #000;
+}
+
+/* Mission */
+.mission {
+  float: left;
+  width: 100%;
+  padding: 50px 0 0 0;
+  text-align: center;
+}
+.mission h3 {
+  font-size: 50px;
+  color: #000;
+  margin: 0 0 20px 0;
+}
+.mission p {
+  font-size: 20px;
+  color: #3d3d3d;
+  line-height: 30px;
+  font-family: Avenier-55;
+}
+
+/* Categories */
+.categories {
+  float: left;
+  width: 100%;
+  margin: 100px 0 0 0;
+}
+.categories h3 {
+  text-align: center;
+  font-size: 50px;
+  color: #000;
+  line-height: 45px;
+  margin: 0 0 50px 0;
+}
+.categories h3 span {
+  font-size: 30px;
+  color: #3d3d3d;
+}
+.categories .category-block {
+  float: left;
+  width: 380px;
+  margin: 0 8px;
+  border: solid 1px #d4d4d4;
+  border-radius: 10px;
+  padding: 1px;
+  text-align: center;
+  font-size: 30px;
+  color: #000;
+  transition: 0.3s;
+}
+.categories .category-block img {
+  border-radius: 9px 9px 0 0;
+  width: 100%;
+}
+.categories .category-block h4 {
+  padding: 20px 0;
+}
+.categories .category-block:hover {
+  border: solid 1px #d4d4d4;
+  color: #fff;
+  background: #000;
+}
+
+/* Featured Collection */
+.featured-collection {
+  float: left;
+  width: 100%;
+  margin: 100px 0 0 0;
+}
+.featured-collection h3 {
+  text-align: center;
+  font-size: 50px;
+  color: #000;
+  line-height: 45px;
+  margin: 0 0 50px 0;
+}
+.featured-collection h3 span {
+  font-size: 30px;
+  color: #3d3d3d;
+}
+.nft-frontend-art {
+  padding: 0;
+  background: #fff;
+  border-radius: 10px;
+  width: 280px;
+  display: inline-block;
+  margin: 0 7px 15px 7px;
+  box-shadow: 0px 0px 20px #00000015;
+}
+.nft-frontend-art img {
+  border-radius: 9px 9px 0 0;
+  width: 100%;
+}
+.nft-frontend-art .favorite-nft {
+  background: #ffffff50;
+  padding: 0px 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-family: Avenier-55;
+  position: absolute;
+  margin: 10px 0 0 -70px;
+  box-shadow: 0 0 10px #00000020;
+}
+.nft-frontend-section {
+  width: calc(100% - 30px);
+  float: left;
+  margin: 0;
+  padding: 15px;
+}
+.nft-frontend-section .left {
+  width: 60%;
+  float: left;
+  margin: 0;
+}
+.nft-frontend-section .left h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.nft-frontend-section .left h4 a {
+  color: #000000;
+  text-decoration: none;
+}
+.nft-frontend-section .left h5 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 15px;
+}
+.nft-frontend-section .left h5 a {
+  color: #4a4a4a;
+  text-decoration: none;
+}
+.nft-frontend-section .right {
+  width: 35%;
+  float: right;
+  margin: 0;
+  text-align: right;
+}
+.nft-frontend-section .right span {
+  font-size: 16px;
+  color: #000000;
+  padding: 5px 5px;
+  border: solid 1px #000000;
+  border-radius: 5px;
+}
+.nft-frontend-section .bottom {
+  width: 100%;
+  float: left;
+  margin: 10px 0 0 0;
+  font-size: 12px;
+  color: #d63333;
+}
+.nft-frontend-section .bottom button {
+  font-size: 12px;
+  color: #d63333;
+  border: solid 1px #d63333;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background: #fff;
+  cursor: pointer;
+  outline: none;
+}
+.nft-frontend-section .bottom button:hover {
+  color: #fff;
+  border: solid 1px #d63333;
+  background: #d63333;
+}
+.nft-frontend-section .bottom-notsale {
+  width: 100%;
+  float: left;
+  margin: 10px 0 0 0;
+  font-size: 12px;
+  color: #c2c2c2;
+}
+.nft-frontend-section .bottom-notsale button {
+  font-size: 12px;
+  color: #c2c2c2;
+  border: solid 1px #c2c2c2;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background: #fff;
+  outline: none;
+}
+
+/* Upcoming Drops */
+.upcoming-drops {
+  float: left;
+  width: 100%;
+  margin: 100px 0 0 0;
+}
+.upcoming-drops h3 {
+  text-align: center;
+  font-size: 50px;
+  color: #000;
+  line-height: 45px;
+  margin: 0 0 50px 0;
+}
+.upcoming-drops h3 span {
+  font-size: 30px;
+  color: #3d3d3d;
+}
+.load-more {
+  text-align: center;
+  float: left;
+  width: 100%;
+  margin: 20px 0;
+}
+.load-more button {
+  background: #000;
+  font-size: 24px;
+  color: #fff;
+  outline: none;
+  border: solid 1px #000;
+  padding: 15px 25px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.load-more button:hover {
+  background: #fff;
+  color: #000;
+  border: solid 1px #000;
+}
+.collection-block {
+  padding: 0;
+  border-radius: 10px;
+  border: solid 1px #d4d4d4;
+  display: inline-block;
+  margin: 0 12px 24px 12px;
+  width: 370px;
+}
+.collection-block .coll-image {
+  width: 100%;
+  height: 260px;
+  text-align: center;
+  overflow: hidden;
+}
+.collection-block .coll-image img {
+  width: 100%;
+  border-radius: 9px 9px 0 0;
+}
+.collection-block .content {
+  width: calc(100% - 20px);
+  float: left;
+  margin: 0;
+  padding: 10px;
+}
+.collection-block .content .left {
+  width: 30%;
+  float: left;
+  margin: 0;
+}
+.collection-block .content .left img {
+  width: 90%;
+  border-radius: 100px;
+  margin: -60px 0 0 0;
+  border: solid 1px #fff;
+  position: relative;
+}
+.collection-block .content .right {
+  width: 70%;
+  float: right;
+  margin: 0;
+}
+.collection-block .content .right h4 {
+  font-size: 20px;
+}
+.collection-block .content .right h4 a {
+  color: #000000;
+  text-decoration: none;
+}
+.collection-block .content .right h5 {
+  color: #3d3d3d;
+  font-size: 14px;
+  line-height: 15px;
+}
+.collection-block .content .right h6 {
+  color: #d63333;
+  font-size: 14px;
+  float: left;
+}
+.collection-block .content .right span {
+  color: #000;
+  font-size: 14px;
+  border: solid 1px #000;
+  border-radius: 5px;
+  float: right;
+  padding: 5px;
+  line-height: 15px;
+}
+.all-categories {
+  width: 100%;
+  float: left;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.all-categories #tsum-tabs section {
+  display: none;
+  float: left;
+  width: 100%;
+  border-top: solid 1px #000;
+  padding: 30px 0 0 0;
+  text-align: left;
+}
+.all-categories #tsum-tabs input {
+  display: none;
+}
+.all-categories #tsum-tabs label {
+  display: inline-block;
+  margin: 0 20px;
+  padding: 10px 10px;
+  text-align: center;
+  color: #8a8a8a;
+  font-size: 25px;
+}
+.all-categories #tsum-tabs label:hover {
+  color: #000000;
+  cursor: pointer;
+}
+.all-categories #tsum-tabs input:checked + label {
+  color: #000000;
+  border-bottom: 4px solid #000000;
+}
+#tsum-tabs #tab1:checked ~ #content1,
+#tsum-tabs #tab2:checked ~ #content2,
+#tsum-tabs #tab3:checked ~ #content3,
+#tsum-tabs #tab4:checked ~ #content4 {
+  display: block;
+}
+
+/* Collection Detail */
+.collection-detail {
+  float: left;
+  width: 100%;
+}
+.collection-detail .collection-banner {
+  background: url(../images/default-collection-detail.png) top center no-repeat;
+  min-height: 500px;
+  float: left;
+  width: 100%;
+}
+.collection-detail .collection-left {
+  float: left;
+  width: 200px;
+  background: #fff;
+  box-shadow: 0 0 10px #00000030;
+  border-radius: 10px;
+  border: solid 1px #d8d8d8;
+  margin: -200px 0 0 0;
+  position: relative;
+  text-align: center;
+  padding: 40px;
+}
+.collection-detail .collection-left img {
+  width: 85%;
+  border-radius: 100px;
+}
+.collection-detail .collection-left h2 {
+  font-size: 30px;
+  color: #000;
+  margin: 10px 0;
+}
+.collection-detail .collection-left .collection-vendor {
+  font-size: 16px;
+  color: #888888;
+  margin: 0;
+  font-family: Avenier-55;
+}
+.collection-detail .collection-left .collection-vendor b {
+  color: #000000;
+}
+.collection-detail .collection-left .wallet-address {
+  cursor: pointer;
+  background: #000;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 2px 3px;
+  text-align: center;
+  color: #fff;
+  font-family: Avenier-55;
+  width: 70%;
+  margin: auto;
+}
+.collection-detail .collection-left .collection-info {
+  float: left;
+  width: 100%;
+  margin: 20px 0;
+}
+.collection-detail .collection-left .collection-info span {
+  border: solid 1px #9b9b9b;
+  font-size: 13px;
+  color: #9b9b9b;
+  display: block;
+  text-align: center;
+  font-family: Avenier-55;
+  float: left;
+  width: 32%;
+}
+.collection-detail .collection-left .collection-info span b {
+  font-size: 18px;
+  color: #000;
+  display: block;
+  font-family: Avenier-95;
+}
+.collection-detail .collection-left .collection-info span:first-child {
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+}
+.collection-detail .collection-left .collection-info span:last-child {
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+}
+.collection-detail .collection-left .collection-short-content {
+  font-size: 15px;
+  color: #9b9b9b;
+  line-height: 24px;
+  font-family: Avenier-55;
+  margin: 10px 0;
+}
+.collection-detail .collection-left .socials {
+  float: left;
+  width: 100%;
+  margin: 20px 0;
+  text-align: center;
+}
+.collection-detail .collection-left .socials a {
+  color: #000;
+  font-size: 24px;
+  margin: 0 10px;
+}
+.collection-detail .collection-left .socials a:hover {
+  color: #d63333;
+}
+.collection-detail .collection-left .share-report {
+  float: left;
+  width: 100%;
+  margin: 20px 0;
+  text-align: center;
+}
+.collection-detail .collection-left .share-report a {
+  border: solid 1px #d2d2d2;
+  border-radius: 50px;
+  color: #d2d2d2;
+  font-size: 24px;
+  margin: 0 10px;
+  padding: 8px 10px;
+}
+.collection-detail .collection-left .share-report a:hover {
+  border: solid 1px #000;
+  color: #000;
+}
+.collection-detail .collection-left .created-on {
+  float: left;
+  width: 100%;
+  font-size: 12px;
+  color: #cecece;
+  border-top: solid 1px #cecece;
+  text-align: center;
+  font-family: Avenier-55;
+  padding: 10px 0 0 0;
+  margin: 50px 0 0 0;
+}
+.collection-detail .collection-right {
+  float: right;
+  width: calc(100% - 300px);
+}
+.collection-detail .collection-right .collection-filters {
+  float: left;
+  width: 100%;
+  margin: 0;
+}
+.collection-detail .collection-right .user-pages {
+  float: left;
+  width: 100%;
+  margin: 40px 0;
+  border-bottom: solid 1px #000;
+  padding: 8px 0;
+}
+.collection-detail .collection-right .user-pages ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.collection-detail .collection-right .user-pages ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+.collection-detail .collection-right .user-pages ul li a {
+  font-size: 18px;
+  color: #3d3d3d;
+  padding: 10px 10px;
+  text-decoration: none;
+  line-height: 30px;
+}
+.collection-detail .collection-right .user-pages ul li a:hover {
+  color: #000;
+}
+.collection-detail .collection-right .user-pages ul li a.active {
+  color: #000;
+  border-bottom: solid 2px #000;
+}
+.collection-detail .collection-right .user-pages .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.collection-detail .collection-right .user-pages .dropdown-content {
+  display: none;
+  position: absolute;
+  background: #fff;
+  min-width: 200px;
+  box-shadow: 0 3px 6px #00000020;
+  z-index: 1;
+  border-radius: 10px;
+  margin: 6px 0 0 0;
+}
+.collection-detail .collection-right .user-pages .dropdown-content a {
+  color: #3d3d3d;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  line-height: 30px;
+  border-bottom: solid 1px #cccccc;
+}
+.collection-detail
+  .collection-right
+  .user-pages
+  .dropdown-content
+  a:last-child {
+  border-bottom: none;
+}
+.collection-detail .collection-right .user-pages .dropdown-content a:hover {
+  color: #000;
+}
+.collection-detail
+  .collection-right
+  .user-pages
+  .dropdown:hover
+  .dropdown-content {
+  display: block;
+  -webkit-animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  -ms-animation: fadein 1s;
+  -o-animation: fadein 1s;
+  animation: fadein 1s;
+}
+.collection-detail .collection-right table {
+  float: left;
+  width: 100%;
+}
+.collection-detail .collection-right table tr td {
+  font-size: 16px;
+  color: #000;
+  border-bottom: solid 1px #bbbbbb;
+  padding: 10px 0;
+}
+.collection-detail .collection-right table tr td img {
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+}
+.collection-detail .collection-right table tr td a {
+  color: #000;
+  text-decoration: none;
+}
+.collection-detail .collection-right table tr td a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.collection-detail .collection-right table tr td .accept {
+  font-size: 16px;
+  color: #fff;
+  background: #000;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 0 20px 0 0;
+  cursor: pointer;
+  border: solid 1px #000;
+  outline: none;
+}
+.collection-detail .collection-right table tr td .accept:hover {
+  color: #000;
+  background: #fff;
+  border: solid 1px #000;
+}
+.collection-detail .collection-right table tr td .cancel {
+  font-size: 16px;
+  color: #000;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 0 20px 0 0;
+  cursor: pointer;
+  border: solid 1px #000;
+  outline: none;
+}
+.collection-detail .collection-right table tr td .cancel:hover {
+  color: #d63333;
+  background: #fff;
+  border: solid 1px #d63333;
+}
+.collection-detail .collection-right .profile-fields {
+  float: left;
+  width: 100%;
+}
+.collection-detail .collection-right .profile-fields .left {
+  float: left;
+  width: 30%;
+}
+.collection-detail .collection-right .profile-fields .right {
+  float: right;
+  width: 70%;
+}
+.collection-detail .collection-right .profile-fields label {
+  display: block;
+  font-size: 18px;
+  color: #3d3d3d;
+  margin: 0 0 5px 0;
+  float: left;
+  width: 100%;
+  font-family: Avenier-55;
+}
+.collection-detail .collection-right .profile-fields input[type="text"] {
+  font-size: 18px;
+  color: #000000;
+  margin: 0 0 15px 0;
+  float: left;
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: solid 1px #c8c8c8;
+  border-radius: 5px;
+  outline: none;
+}
+.collection-detail .collection-right .profile-fields input[type="email"] {
+  font-size: 18px;
+  color: #000000;
+  margin: 0 0 15px 0;
+  float: left;
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: solid 1px #c8c8c8;
+  border-radius: 5px;
+  outline: none;
+}
+.collection-detail .collection-right .profile-fields textarea {
+  font-size: 18px;
+  color: #000000;
+  margin: 0 0 15px 0;
+  float: left;
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: solid 1px #c8c8c8;
+  border-radius: 5px;
+  outline: none;
+  min-height: 100px;
+}
+.collection-detail .collection-right .profile-fields button {
+  font-size: 24px;
+  color: #fff;
+  margin: 0;
+  padding: 10px 40px;
+  border: solid 1px #000;
+  border-radius: 10px;
+  outline: none;
+  background: #000;
+  cursor: pointer;
+}
+.collection-detail .collection-right .profile-fields button:hover {
+  color: #000;
+  border: solid 1px #000;
+  background: #fff;
+}
+.collection-detail .collection-right .profile-fields input[type="file"].thumb {
+  opacity: 0;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  float: left;
+  margin: 0 0 -150px 0;
+}
+.collection-detail .collection-right .profile-fields .file-overlay-thumb {
+  margin: 0 0 20px 0;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  background: #00000020;
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+  float: left;
+}
+.collection-detail
+  .collection-right
+  .profile-fields
+  .file-overlay-thumb
+  .fa-edit {
+  margin: 50px 0 0 0;
+  color: #fff;
+  font-size: 30px;
+  display: block;
+  font-weight: 100;
+}
+.collection-detail .collection-right .profile-fields input[type="file"].cover {
+  opacity: 0;
+  width: 210px;
+  height: 150px;
+  cursor: pointer;
+  float: left;
+  margin: 0 0 -150px 0;
+}
+.collection-detail .collection-right .profile-fields .file-overlay-cover {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  background: #00000020;
+  height: 150px;
+  width: 210px;
+  border-radius: 20px;
+  float: left;
+}
+.collection-detail
+  .collection-right
+  .profile-fields
+  .file-overlay-cover
+  .fa-edit {
+  margin: 50px 0 0 0;
+  color: #fff;
+  font-size: 30px;
+  display: block;
+  font-weight: 100;
+}
+
+/* NFT Detail */
+.nft-details {
+  float: left;
+  width: 100%;
+  margin: 30px 0 60px 0;
+}
+.nft-details .nft-image {
+  float: left;
+  width: 49%;
+}
+.nft-details .nft-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+.nft-details .nft-image .favorite-drop {
+  background: #ffffff50;
+  padding: 0px 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-family: Avenier-55;
+  position: absolute;
+  margin: 10px 0 0 -80px;
+  box-shadow: 0 0 10px #00000020;
+}
+.nft-details .nft-data {
+  float: right;
+  width: 49%;
+}
+.nft-details .nft-data h2 {
+  font-size: 40px;
+  color: #000000;
+  margin: 30px 0 0 0;
+  line-height: 40px;
+}
+.nft-details .nft-data h3 {
+  font-size: 20px;
+  color: #4a4a4a;
+  margin: 5px 0 0 0;
+}
+.nft-details .share-nft-detail {
+  float: right;
+  width: 30%;
+  margin: -5px 0 0 0;
+  text-align: right;
+}
+.nft-details .share-nft-detail a {
+  border: solid 1px #d2d2d2;
+  border-radius: 50px;
+  color: #d2d2d2;
+  font-size: 24px;
+  margin: 0 5px;
+  padding: 8px 10px;
+}
+.nft-details .share-nft-detail a:hover {
+  border: solid 1px #000;
+  color: #000;
+}
+.nft-details .share-nft-detail .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.nft-details .share-nft-detail .dropdown-content {
+  display: none;
+  position: absolute;
+  background: #fff;
+  min-width: 200px;
+  box-shadow: 0 3px 6px #00000020;
+  z-index: 1;
+  border-radius: 10px;
+  left: -75px;
+  text-align: center;
+  margin: 2px 0 0 0;
+}
+.nft-details .share-nft-detail .dropdown-content a {
+  color: #3d3d3d;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  border: none;
+  margin: 0;
+}
+.nft-details .share-nft-detail .dropdown-content a:hover {
+  color: #000;
+}
+.nft-details .share-nft-detail .dropdown:hover .dropdown-content {
+  display: block;
+  -webkit-animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  -ms-animation: fadein 1s;
+  -o-animation: fadein 1s;
+  animation: fadein 1s;
+}
+.nft-details .nft-data .vendor-name {
+  font-size: 16px;
+  color: #888888;
+  margin: 5px 0 0 0;
+  font-family: Avenier-55;
+  display: block;
+  line-height: 16px;
+}
+.nft-details .nft-data .vendor-name b {
+  color: #000000;
+}
+.nft-details .nft-data .pricing {
+  float: left;
+  width: 100%;
+  margin: 10px 0;
+}
+.nft-details .nft-data .pricing .left {
+  float: left;
+  width: 25%;
+}
+.nft-details .nft-data .pricing .right {
+  float: right;
+  width: 70%;
+}
+.nft-details .nft-data .pricing h4 {
+  color: #3d3d3d;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+.nft-details .nft-data .pricing .nft-price {
+  width: 100%;
+  float: left;
+  margin: 0;
+}
+.nft-details .nft-data .pricing .nft-price h6 {
+  font-size: 25px;
+  color: #000000;
+  padding: 5px 10px;
+  border: solid 1px #000;
+  border-radius: 5px;
+  float: left;
+}
+.nft-details .nft-data .pricing .nft-price h7 {
+  font-size: 18px;
+  color: #000000;
+  padding: 5px 10px;
+  border: solid 1px #000;
+  border-radius: 5px;
+  float: left;
+}
+.nft-details .nft-data .pricing .nft-price h7 span {
+  padding: 0 5px;
+}
+.nft-details .nft-data .nft-description {
+  font-size: 18px;
+  color: #3d3d3d;
+  padding: 0;
+  line-height: 26px;
+  font-family: Avenier-55;
+  float: left;
+}
+.nft-details .nft-data .nft-info-history {
+  float: left;
+  width: 100%;
+  margin: 10px 0;
+}
+.nft-details .nft-data .nft-info-history #tsum-tabs section {
+  display: none;
+  padding: 10px;
+  border: solid 1px #000000;
+  border-radius: 10px;
+  float: left;
+  width: calc(100% - 20px);
+  min-height: 120px;
+}
+.nft-details .nft-data .nft-info-history #tsum-tabs section ul {
+  margin: 0;
+  padding: 0;
+}
+.nft-details .nft-data .nft-info-history #tsum-tabs section ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #3d3d3d;
+  font-size: 16px;
+}
+.nft-details .nft-data .nft-info-history #tsum-tabs section ul li img {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  vertical-align: middle;
+  margin: 10px 10px 10px 20px;
+}
+.nft-details .nft-data .nft-info-history #tsum-tabs section ul li a {
+  color: #3d3d3d;
+  font-size: 16px;
+  text-decoration: none;
+}
+.nft-details .nft-data .nft-info-history #tsum-tabs section ul li a:hover {
+  color: #000000;
+}
+.nft-details .nft-data .nft-info-history #tsum-tabs section .left {
+  float: left;
+  width: 40%;
+  color: #3d3d3d;
+  font-size: 16px;
+}
+.nft-details .nft-data .nft-info-history #tsum-tabs section .right {
+  float: left;
+  width: 40%;
+  color: #000;
+  font-size: 16px;
+  text-align: right;
+}
+.nft-details .nft-data .nft-info-history #tsum-tabs input {
+  display: none;
+}
+.nft-details .nft-data .nft-info-history #tsum-tabs label {
+  display: inline-block;
+  margin: 0 20px;
+  padding: 5px 10px;
+  text-align: center;
+  color: #4a4a4a;
+}
+.nft-details .nft-data .nft-info-history #tsum-tabs label:hover {
+  color: #000000;
+  cursor: pointer;
+}
+.nft-details .nft-data .nft-info-history #tsum-tabs input:checked + label {
+  color: #000000;
+  border-bottom: 2px solid #000000;
+}
+#tsum-tabs #tab1:checked ~ #content1,
+#tsum-tabs #tab2:checked ~ #content2,
+#tsum-tabs #tab3:checked ~ #content3,
+#tsum-tabs #tab4:checked ~ #content4 {
+  display: block;
+}
+.nft-details .nft-data .nft-info-sell {
+  float: left;
+  width: 100%;
+  margin: 10px 0;
+}
+.nft-details .nft-data .nft-info-sell #tsum-tabs section {
+  display: none;
+  padding: 10px;
+  border-top: solid 1px #707070;
+  float: left;
+  width: calc(100% - 20px);
+  min-height: 120px;
+}
+.nft-details .nft-data .nft-info-sell #tsum-tabs section input {
+  display: block;
+}
+.nft-details .nft-data .nft-info-sell #tsum-tabs section label {
+  display: block;
+  font-size: 18px;
+  color: #3d3d3d;
+  text-align: left;
+  font-family: Avenier-55;
+  margin: 0;
+  padding: 0;
+}
+.nft-details .nft-data .nft-info-sell #tsum-tabs section select {
+  width: 19%;
+  margin: 0;
+  border: solid 1px #d8d8d8;
+  padding: 10px;
+  font-size: 22px;
+  color: #000;
+  outline: none;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  float: left;
+}
+.nft-details .nft-data .nft-info-sell #tsum-tabs section input[type="number"] {
+  width: 76%;
+  margin: 0 0 10px 0;
+  border: solid 1px #d8d8d8;
+  padding: 11px;
+  font-size: 22px;
+  color: #000;
+  outline: none;
+  border-radius: 0 5px 5px 0;
+  float: left;
+}
+.nft-details .nft-data .nft-info-sell #tsum-tabs section input[type="text"] {
+  width: 96%;
+  margin: 0 0 10px 0;
+  border: solid 1px #d8d8d8;
+  padding: 11px;
+  font-size: 22px;
+  color: #000;
+  outline: none;
+  border-radius: 5px;
+  float: left;
+}
+.nft-details .nft-data .nft-info-sell #tsum-tabs section input[type="date"] {
+  width: 96%;
+  margin: 0 0 10px 0;
+  border: solid 1px #d8d8d8;
+  padding: 11px;
+  font-size: 22px;
+  color: #000;
+  outline: none;
+  border-radius: 5px;
+  float: left;
+}
+.nft-details .nft-data .nft-info-sell #tsum-tabs input {
+  display: none;
+}
+.nft-details .nft-data .nft-info-sell #tsum-tabs label {
+  display: inline-block;
+  margin: 0 20px;
+  padding: 5px 5px;
+  text-align: center;
+  color: #4a4a4a;
+}
+.nft-details .nft-data .nft-info-sell #tsum-tabs label:hover {
+  color: #000000;
+  cursor: pointer;
+}
+.nft-details .nft-data .nft-info-sell #tsum-tabs input:checked + label {
+  color: #000000;
+  border-bottom: 2px solid #000000;
+}
+.nft-details button {
+  background: #000;
+  font-size: 24px;
+  color: #fff;
+  padding: 15px 20px;
+  border: solid 1px #000;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  margin: 10px 0 0 0;
+}
+.nft-details button:hover {
+  background: #fff;
+  color: #000;
+  border: solid 1px #000;
+}
+.more-collection {
+  float: left;
+  width: 100%;
+  margin: 30px 0 0 0;
+}
+.more-collection h3 {
+  text-align: center;
+  font-size: 50px;
+  color: #000;
+  line-height: 45px;
+  margin: 0 0 50px 0;
+}
+.more-collection h3 span {
+  font-size: 30px;
+  color: #3d3d3d;
+}
+.view-collection {
+  text-align: center;
+  float: left;
+  width: 100%;
+  margin: 20px 0;
+}
+.view-collection button {
+  background: #fff;
+  font-size: 24px;
+  color: #000;
+  outline: none;
+  border: solid 1px #000;
+  padding: 15px 25px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.view-collection button:hover {
+  background: #000;
+  color: #fff;
+  border: solid 1px #000;
+}
+
+/* Popups */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 100;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 5% auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  width: 700px;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+.popup h6 {
+  font-size: 30px;
+  color: #000;
+  text-align: center;
+  border-bottom: solid 1px #cbcbcb;
+  padding: 20px 0;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #b9b9b9;
+}
+.popup .close:hover {
+  color: #000;
+}
+.popup .content {
+  width: calc(100%-80px);
+  max-height: 30%;
+  overflow: auto;
+  padding: 40px;
+}
+.popup .content .title {
+  float: left;
+  width: 100%;
+  font-size: 18px;
+  color: #747474;
+  font-family: Avenier-55;
+}
+.popup .content .buy-details {
+  float: left;
+  width: 100%;
+  border-top: solid 1px #cbcbcb;
+  border-bottom: solid 1px #cbcbcb;
+  padding: 15px 0;
+}
+.popup .content .buy-details img {
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+  float: left;
+  margin: 0 15px 0 0;
+}
+.popup .content .buy-details h7 {
+  font-size: 20px;
+  margin: 10px 0 0 0;
+  padding: 0;
+  color: #000;
+  display: block;
+}
+.popup .content .buy-details p {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  color: #4a4a4a;
+  line-height: 16px;
+}
+.popup .content .buy-details span {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  color: #888888;
+  font-family: Avenier-55;
+}
+.popup .content .buy-details .right {
+  font-size: 20px;
+  color: #000;
+  margin: 10px 0 0 0;
+}
+.popup .content .buy-total {
+  float: left;
+  width: 100%;
+  padding: 15px 0;
+}
+.popup .content .buy-total .left {
+  font-size: 18px;
+  color: #747474;
+}
+.popup .content .buy-total .right {
+  font-size: 24px;
+  color: #000;
+}
+.popup .content .bid-price {
+  float: left;
+  width: 100%;
+  margin: 0;
+  display: flex;
+}
+.popup .content .bid-price select {
+  width: 19%;
+  margin: 0;
+  border: solid 1px #d8d8d8;
+  padding: 10px;
+  font-size: 22px;
+  color: #000;
+  outline: none;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+}
+.popup .content .bid-price input[type="number"] {
+  width: 81%;
+  margin: 0;
+  border: solid 1px #d8d8d8;
+  padding: 10px;
+  font-size: 22px;
+  color: #000;
+  outline: none;
+  border-radius: 0 5px 5px 0;
+}
+.popup .content .reserve-price {
+  float: left;
+  width: 100%;
+  margin: 5px 0 20px 0;
+  font-size: 14px;
+  color: #747474;
+}
+.popup .content .buy-agree {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  color: #3d3d3d;
+  font-family: Avenier-55;
+  border-top: solid 1px #cbcbcb;
+  padding: 10px 0;
+}
+.popup .content .buy-button {
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin: 30px 0 0 0;
+}
+.popup .content .left {
+  float: left;
+  width: 60%;
+  text-align: left;
+}
+.popup .content .right {
+  float: right;
+  width: 40%;
+  text-align: right;
+}
+
+/* Footer */
+footer {
+  float: left;
+  width: 100%;
+  margin: 100px 0 0 0;
+  background: #000;
+}
+footer .footer-top {
+  float: left;
+  width: 100%;
+  margin: 70px 0;
+}
+footer .footer-top .first {
+  float: left;
+  width: 40%;
+  margin: 0;
+}
+footer .footer-top .first img {
+  width: 50%;
+}
+footer .footer-top .first p {
+  font-size: 16px;
+  padding: 20px 0 0 0;
+  color: #ebebeb;
+  font-family: Avenier-55;
+  line-height: 24px;
+  width: 80%;
+}
+footer .footer-top .second {
+  float: left;
+  width: 20%;
+  margin: 0;
+}
+footer .footer-top .second h6 {
+  font-size: 24px;
+  color: #fff;
+  margin: 0 0 20px 0;
+}
+footer .footer-top .second ul {
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+footer .footer-top .second ul li {
+  list-style: disc;
+  color: #ebebeb;
+}
+footer .footer-top .second ul li a {
+  font-size: 16px;
+  color: #ebebeb;
+  font-family: Avenier-55;
+  text-decoration: none;
+}
+footer .footer-top .second ul li a:hover {
+  color: #fff;
+}
+footer .footer-top .third {
+  float: left;
+  width: 20%;
+  margin: 0;
+}
+footer .footer-top .third h6 {
+  font-size: 24px;
+  color: #fff;
+  margin: 0 0 20px 0;
+}
+footer .footer-top .third a {
+  font-size: 24px;
+  color: #fff;
+  margin: 0 12px;
+}
+footer .footer-top .third a:hover {
+  color: #d63333;
+}
+footer .footer-top .third span {
+  font-size: 14px;
+  color: #ebebeb;
+  margin: 20px 0;
+  display: block;
+  line-height: 18px;
+  font-family: Avenier-55;
+}
+footer .footer-top .third input[type="email"] {
+  background: #fff;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 13px 45px 13px 13px;
+  font-family: Avenier-55;
+  width: calc(100% - 58px);
+}
+footer .footer-top .third button {
+  background: #000;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 7px 10px;
+  color: #fff;
+  font-size: 20px;
+  float: right;
+  position: relative;
+  margin: -39px 2px 0 0;
+  cursor: pointer;
+}
+footer .footer-bottom {
+  float: left;
+  width: 100%;
+  padding: 30px 0;
+  font-size: 14px;
+  color: #979797;
+  border-top: solid 1px #333333;
+  font-family: Avenier-55;
+}
+footer .footer-bottom a {
+  color: #979797;
+  text-decoration: none;
+}
+footer .footer-bottom a:hover {
+  color: #fff;
+  text-decoration: none;
+}
