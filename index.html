@@ -1,1 +1,714 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabou1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <script src="https://kit.fontawesome.com/9521be1a42.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <a href="home-old.html"><img src="images/logo.png" alt="Tabou1"></a>
+        </div>
+
+        <nav>
+            <ul>
+                <!--<li class="dropdown"><a href="">Categories <i class="fas fa-angle-down"></i></a>
+            <div class="dropdown-content">
+                <a href="category.html"><i class="fas fa-music"></i> Music</a>
+                <a href="category.html"><i class="fas fa-image"></i> Paintings</a>
+                <a href="category.html"><i class="fas fa-camera"></i> Photographs</a>
+            </div>
+            </li>-->
+                <li><a href="explore.html">Explore</a></li>
+                <li class="dropdown"><a href="">My Profile <i class="fas fa-angle-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="user-collection.html"><i class="far fa-clone"></i> My Collection</a>
+                        <a href="user-favorites.html"><i class="far fa-heart"></i> My Favorites</a>
+                        <a href="my-offers.html"><i class="fab fa-hive"></i> My Offers</a>
+                        <a href="my-profile.html"><i class="far fa-user"></i> My Profile</a>
+                        <a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </li>
+                <li class="dropdown"><a href="">More <i class="fas fa-angle-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="about.html">About</a>
+                        <a href="help.html">FAQ / Help</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="subscribe.html">Subscribe</a>
+                    </div>
+                </li>
+                <li class="dropdown"><button><i class="fas fa-wallet"></i> Connect</button>
+                    <div class="dropdown-content last-meta">
+                        <span>Choose one of available wallet providers.</span>
+                        <div class="ethereum-meta"><a href="#" class="active"><i class="fab fa-ethereum"></i>
+                                Ethereum</a></div>
+                        <div class="ethereum-meta"><a href="#"><i class="fab fa-gg"></i> Polygon</a></div>
+                        <div id="eth">
+                            <button><img src="images/meta-icon.png" /> Metamask</button>
+                            <button><img src="images/trust-icon.png" /> Trust Wallet</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="search" placeholder="Search collections and items" /><i class="fas fa-search"></i>
+        </div>
+    </header>
+
+    <!-- DOW Section -->
+    <section class="drop-of-week">
+        <div class="panel">
+            <div class="dow-nft-image"><img src="images/3.png" /><span class="favorite-drop"><i
+                        class="far fa-heart"></i> 358</span></div>
+            <div class="dow-nft-data">
+                <h5>Drop of the week</h5>
+                <h3>Amazing Digital Art</h3>
+                <h4>Collection name</h4>
+                <span class="vendor-name">Vendor : <b>Random</b></span>
+                <p>Current bid</p>
+                <div class="dow-nft-price">
+                    <h6><i class="fab fa-ethereum"></i> 6.2580</h6>
+                </div>
+                <p>Auction ends in</p>
+                <div class="dow-auction">
+                    <span><b>3</b> DAYS</span>
+                    <span><b>15</b> HOURS</span>
+                    <span><b>30</b> MINUTES</span>
+                    <span><b>20</b> SECONDS</span>
+                </div>
+                <button><i class="fas fa-gavel"></i> Place bid</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission">
+        <div class="panel">
+            <h3>Our Mission</h3>
+            <p> TABOU1 provides top of the line, curated art NFTs, from music to visual arts, in a cool, easy to use and
+                secure shopping experience.</p>
+            <p> Why? </p>
+            <p> We believe owning ART should be easily available to all. </p>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <!--<section class="categories">
+	<div class="panel">
+    	<h3><span>Browse by</span><br>Category</h3>
+        <a href="category.html"><div class="category-block">
+        	<img src="images/music.png" />
+            <h4>Music</h4>
+        </div></a>
+        
+        <a href="category.html"><div class="category-block">
+        	<img src="images/paintings.png" />
+            <h4>Paintings</h4>
+        </div></a>
+        
+        <a href="category.html"><div class="category-block">
+        	<img src="images/photograps.png" />
+            <h4>Photographs</h4>
+        </div></a>
+    </div>
+</section>-->
+
+    <!-- Upcoming Drops Section -->
+    <section class="upcoming-drops">
+        <div class="panel">
+            <h3><span>Future</span><br>Upcoming Drops</h3>
+
+            <div class="collection-block">
+                <div class="coll-image"><a href="collection-detail.html"><img src="images/default-image.png" /></a>
+                </div>
+                <div class="content">
+                    <div class="left"><img src="images/default-image.png" /></div>
+                    <div class="right">
+                        <h4><a href="collection-detail.html">Collection Name</a><span>50 items</span></h4>
+                        <h5>by venlore</h5>
+                        <h6><i class="fas fa-history"></i> 02 Days 15 Hrs 30 Mins</h6>
+                        <!-- <span>50 items</span> -->
+                    </div>
+                </div>
+            </div>
+            <div class="collection-block">
+                <div class="coll-image"><a href="collection-detail.html"><img src="images/default-image.png" /></a>
+                </div>
+                <div class="content">
+                    <div class="left"><img src="images/default-image.png" /></div>
+                    <div class="right">
+                        <h4><a href="collection-detail.html">Collection Name</a> <span>50 items</span></h4>
+                        <h5>by venlore</h5>
+                        <h6><i class="fas fa-history"></i> 02 Days 15 Hrs 30 Mins</h6>
+                        <!-- <span>50 items</span> -->
+                    </div>
+                </div>
+            </div>
+            <div class="collection-block">
+                <div class="coll-image"><a href="collection-detail.html"><img src="images/default-image.png" /></a>
+                </div>
+                <div class="content">
+                    <div class="left"><img src="images/default-image.png" /></div>
+                    <div class="right">
+                        <h4><a href="collection-detail.html">Collection Name</a><span>50 items</span></h4>
+                        <h5>by venlore</h5>
+                        <h6><i class="fas fa-history"></i> 02 Days 15 Hrs 30 Mins</h6>
+                        <!-- <span>50 items</span> -->
+                    </div>
+                </div>
+            </div>
+            <div class="collection-block">
+                <div class="coll-image"><a href="collection-detail.html"><img src="images/default-image.png" /></a>
+                </div>
+                <div class="content">
+                    <div class="left"><img src="images/default-image.png" /></div>
+                    <div class="right">
+                        <h4><a href="collection-detail.html">Collection Name</a><span>50 items</span></h4>
+                        <h5>by venlore</h5>
+                        <h6><i class="fas fa-history"></i> 02 Days 15 Hrs 30 Mins</h6>
+                        <!-- <span>50 items</span> -->
+                    </div>
+                </div>
+            </div>
+            <div class="collection-block">
+                <div class="coll-image"><a href="collection-detail.html"><img src="images/default-image.png" /></a>
+                </div>
+                <div class="content">
+                    <div class="left"><img src="images/default-image.png" /></div>
+                    <div class="right">
+                        <h4><a href="collection-detail.html">Collection Name</a><span>50 items</span></h4>
+                        <h5>by venlore</h5>
+                        <h6><i class="fas fa-history"></i> 02 Days 15 Hrs 30 Mins</h6>
+                        <!-- <span>50 items</span> -->
+                    </div>
+                </div>
+            </div>
+            <div class="collection-block">
+                <div class="coll-image"><a href="collection-detail.html"><img src="images/default-image.png" /></a>
+                </div>
+                <div class="content">
+                    <div class="left"><img src="images/default-image.png" /></div>
+                    <div class="right">
+                        <h4><a href="collection-detail.html">Collection Name</a><span>50 items</span></h4>
+                        <h5>by venlore</h5>
+                        <h6><i class="fas fa-history"></i> 02 Days 15 Hrs 30 Mins</h6>
+                        <!-- <span>50 items</span> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="load-more"><button>View more</button></div>
+
+        </div>
+    </section>
+
+    <!-- Featured Collection Section -->
+    <section class="featured-collection">
+        <div class="panel">
+            <h3><span>Featured</span><br>Art of the Month</h3>
+
+            <div class="nft-frontend-art">
+                <a href="nft-fixed.html"><img src="images/default-image.png"></a>
+                <span class="favorite-nft"><i class="far fa-heart"></i> 358</span>
+                <div class="nft-frontend-section">
+                    <div class="left">
+                        <h4><a href="nft-fixed.html">Amazing Digital Art</a></h4>
+                        <h5><a href="collection-detail.html">Collection name</a></h5>
+                    </div>
+                    <div class="right">
+                        <span><i class="fab fa-ethereum"></i> 2.50</span>
+                    </div>
+                    <div class="bottom">
+                        <button>Buy now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="nft-frontend-art">
+                <a href="nft-fixed.html"><img src="images/default-image.png"></a>
+                <span class="favorite-nft"><i class="far fa-heart"></i> 358</span>
+                <div class="nft-frontend-section">
+                    <div class="left">
+                        <h4><a href="nft-fixed.html">Amazing Digital Art</a></h4>
+                        <h5><a href="collection-detail.html">Collection name</a></h5>
+                    </div>
+                    <div class="right">
+                        <span><i class="fab fa-ethereum"></i> 2.50</span>
+                    </div>
+                    <div class="bottom">
+                        <button>Buy now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="nft-frontend-art">
+                <a href="nft-fixed.html"><img src="images/default-image.png"></a>
+                <span class="favorite-nft"><i class="far fa-heart"></i> 358</span>
+                <div class="nft-frontend-section">
+                    <div class="left">
+                        <h4><a href="nft-fixed.html">Amazing Digital Art</a></h4>
+                        <h5><a href="collection-detail.html">Collection name</a></h5>
+                    </div>
+                    <div class="right">
+                        <span><i class="fab fa-ethereum"></i> 2.50</span>
+                    </div>
+                    <div class="bottom">
+                        <button>Buy now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="nft-frontend-art">
+                <a href="nft-fixed.html"><img src="images/default-image.png"></a>
+                <span class="favorite-nft"><i class="far fa-heart"></i> 358</span>
+                <div class="nft-frontend-section">
+                    <div class="left">
+                        <h4><a href="nft-fixed.html">Amazing Digital Art</a></h4>
+                        <h5><a href="collection-detail.html">Collection name</a></h5>
+                    </div>
+                    <div class="right">
+                        <span><i class="fab fa-ethereum"></i> 2.50</span>
+                    </div>
+                    <div class="bottom">
+                        <button>Buy now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="nft-frontend-art">
+                <a href="nft-fixed.html"><img src="images/default-image.png"></a>
+                <span class="favorite-nft"><i class="far fa-heart"></i> 358</span>
+                <div class="nft-frontend-section">
+                    <div class="left">
+                        <h4><a href="nft-fixed.html">Amazing Digital Art</a></h4>
+                        <h5><a href="collection-detail.html">Collection name</a></h5>
+                    </div>
+                    <div class="right">
+                        <span><i class="fab fa-ethereum"></i> 2.50</span>
+                    </div>
+                    <div class="bottom">
+                        <button>Buy now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="nft-frontend-art">
+                <a href="nft-fixed.html"><img src="images/default-image.png"></a>
+                <span class="favorite-nft"><i class="far fa-heart"></i> 358</span>
+                <div class="nft-frontend-section">
+                    <div class="left">
+                        <h4><a href="nft-fixed.html">Amazing Digital Art</a></h4>
+                        <h5><a href="collection-detail.html">Collection name</a></h5>
+                    </div>
+                    <div class="right">
+                        <span><i class="fab fa-ethereum"></i> 2.50</span>
+                    </div>
+                    <div class="bottom">
+                        <button>Buy now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="nft-frontend-art">
+                <a href="nft-fixed.html"><img src="images/default-image.png"></a>
+                <span class="favorite-nft"><i class="far fa-heart"></i> 358</span>
+                <div class="nft-frontend-section">
+                    <div class="left">
+                        <h4><a href="nft-fixed.html">Amazing Digital Art</a></h4>
+                        <h5><a href="collection-detail.html">Collection name</a></h5>
+                    </div>
+                    <div class="right">
+                        <span><i class="fab fa-ethereum"></i> 2.50</span>
+                    </div>
+                    <div class="bottom">
+                        <button>Buy now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="nft-frontend-art">
+                <a href="nft-fixed.html"><img src="images/default-image.png"></a>
+                <span class="favorite-nft"><i class="far fa-heart"></i> 358</span>
+                <div class="nft-frontend-section">
+                    <div class="left">
+                        <h4><a href="nft-fixed.html">Amazing Digital Art</a></h4>
+                        <h5><a href="collection-detail.html">Collection name</a></h5>
+                    </div>
+                    <div class="right">
+                        <span><i class="fab fa-ethereum"></i> 2.50</span>
+                    </div>
+                    <div class="bottom">
+                        <button>Buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Explore Section -->
+    <!-- <section class="featured-collection">
+        <div class="panel">
+            <h3><span>All NFTs</span><br>Explore</h3>
+
+            <div class="nft-frontend-art">
+                <a href="nft-fixed.html"><img src="images/default-image.png"></a>
+                <span class="favorite-nft"><i class="far fa-heart"></i> 358</span>
+                <div class="nft-frontend-section">
+                    <div class="left">
+                        <h4><a href="nft-fixed.html">Amazing Digital Art</a></h4>
+                        <h5><a href="collection-detail.html">Collection name</a></h5>
+                    </div>
+                    <div class="right">
+                        <span><i class="fab fa-ethereum"></i> 2.50</span>
+                    </div>
+                    <div class="bottom">
+                        <button>Buy now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="nft-frontend-art">
+                <a href="nft-fixed.html"><img src="images/default-image.png"></a>
+                <span class="favorite-nft"><i class="far fa-heart"></i> 358</span>
+                <div class="nft-frontend-section">
+                    <div class="left">
+                        <h4><a href="nft-fixed.html">Amazing Digital Art</a></h4>
+                        <h5><a href="collection-detail.html">Collection name</a></h5>
+                    </div>
+                    <div class="right">
+                        <span><i class="fab fa-ethereum"></i> 2.50</span>
+                    </div>
+                    <div class="bottom">
+                        <button>Buy now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="nft-frontend-art">
+                <a href="nft-fixed.html"><img src="images/default-image.png"></a>
+                <span class="favorite-nft"><i class="far fa-heart"></i> 358</span>
+                <div class="nft-frontend-section">
+                    <div class="left">
+                        <h4><a href="nft-fixed.html">Amazing Digital Art</a></h4>
+                        <h5><a href="collection-detail.html">Collection name</a></h5>
+                    </div>
+                    <div class="right">
+                        <span><i class="fab fa-ethereum"></i> 2.50</span>
+                    </div>
+                    <div class="bottom">
+                        <button>Buy now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="nft-frontend-art">
+                <a href="nft-fixed.html"><img src="images/default-image.png"></a>
+                <span class="favorite-nft"><i class="far fa-heart"></i> 358</span>
+                <div class="nft-frontend-section">
+                    <div class="left">
+                        <h4><a href="nft-fixed.html">Amazing Digital Art</a></h4>
+                        <h5><a href="collection-detail.html">Collection name</a></h5>
+                    </div>
+                    <div class="right">
+                        <span><i class="fab fa-ethereum"></i> 2.50</span>
+                    </div>
+                    <div class="bottom">
+                        <button>Buy now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="nft-frontend-art">
+                <a href="nft-fixed.html"><img src="images/default-image.png"></a>
+                <span class="favorite-nft"><i class="far fa-heart"></i> 358</span>
+                <div class="nft-frontend-section">
+                    <div class="left">
+                        <h4><a href="nft-fixed.html">Amazing Digital Art</a></h4>
+                        <h5><a href="collection-detail.html">Collection name</a></h5>
+                    </div>
+                    <div class="right">
+                        <span><i class="fab fa-ethereum"></i> 2.50</span>
+                    </div>
+                    <div class="bottom">
+                        <button>Buy now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="nft-frontend-art">
+                <a href="nft-fixed.html"><img src="images/default-image.png"></a>
+                <span class="favorite-nft"><i class="far fa-heart"></i> 358</span>
+                <div class="nft-frontend-section">
+                    <div class="left">
+                        <h4><a href="nft-fixed.html">Amazing Digital Art</a></h4>
+                        <h5><a href="collection-detail.html">Collection name</a></h5>
+                    </div>
+                    <div class="right">
+                        <span><i class="fab fa-ethereum"></i> 2.50</span>
+                    </div>
+                    <div class="bottom">
+                        <button>Buy now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="nft-frontend-art">
+                <a href="nft-fixed.html"><img src="images/default-image.png"></a>
+                <span class="favorite-nft"><i class="far fa-heart"></i> 358</span>
+                <div class="nft-frontend-section">
+                    <div class="left">
+                        <h4><a href="nft-fixed.html">Amazing Digital Art</a></h4>
+                        <h5><a href="collection-detail.html">Collection name</a></h5>
+                    </div>
+                    <div class="right">
+                        <span><i class="fab fa-ethereum"></i> 2.50</span>
+                    </div>
+                    <div class="bottom">
+                        <button>Buy now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="nft-frontend-art">
+                <a href="nft-fixed.html"><img src="images/default-image.png"></a>
+                <span class="favorite-nft"><i class="far fa-heart"></i> 358</span>
+                <div class="nft-frontend-section">
+                    <div class="left">
+                        <h4><a href="nft-fixed.html">Amazing Digital Art</a></h4>
+                        <h5><a href="collection-detail.html">Collection name</a></h5>
+                    </div>
+                    <div class="right">
+                        <span><i class="fab fa-ethereum"></i> 2.50</span>
+                    </div>
+                    <div class="bottom">
+                        <button>Buy now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="load-more"><button>View more</button></div>
+        </div>
+    </section> -->
+    <!-- Explore from big -->
+
+    <section class="featured-collection">
+        <div class="panel">
+            <h3><span>All NFTs</span><br>Explore</h3>
+            <div class="all-categories">
+                <div id="tsum-tabs">
+                    <input id="tab1" type="radio" name="tabs" checked>
+                    <label for="tab1"><i class="fas fa-music"></i> Music</label>
+                    <input id="tab2" type="radio" name="tabs">
+                    <label for="tab2"><i class="fas fa-image"></i> Paintings</label>
+                    <input id="tab3" type="radio" name="tabs">
+                    <label for="tab3"><i class="fas fa-camera"></i> Photographs</label>
+                    <section id="content1">
+                        <div class="nft-frontend-art">
+                            <a href="nft-fixed.html"><img src="images/default-image.png"></a>
+                            <span class="favorite-nft"><i class="far fa-heart"></i> 358</span>
+                            <div class="nft-frontend-section">
+                                <div class="left">
+                                    <h4><a href="nft-fixed.html">Amazing Digital Art</a></h4>
+                                    <h5><a href="collection-detail.html">Collection name</a></h5>
+                                </div>
+                                <div class="right">
+                                    <span><i class="fab fa-ethereum"></i> 2.50</span>
+                                </div>
+                                <div class="bottom">
+                                    <button>Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="load-more"><button>Load more</button></div>
+                    </section>
+                    <section id="content2">
+                        <div class="nft-frontend-art">
+                            <a href="nft-fixed.html"><img src="images/default-image.png"></a>
+                            <span class="favorite-nft"><i class="far fa-heart"></i> 358</span>
+                            <div class="nft-frontend-section">
+                                <div class="left">
+                                    <h4><a href="nft-fixed.html">Amazing Digital Art</a></h4>
+                                    <h5><a href="collection-detail.html">Collection name</a></h5>
+                                </div>
+                                <div class="right">
+                                    <span><i class="fab fa-ethereum"></i> 2.50</span>
+                                </div>
+                                <div class="bottom">
+                                    <button>Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nft-frontend-art">
+                            <a href="nft-fixed.html"><img src="images/default-image.png"></a>
+                            <span class="favorite-nft"><i class="far fa-heart"></i> 358</span>
+                            <div class="nft-frontend-section">
+                                <div class="left">
+                                    <h4><a href="nft-fixed.html">Amazing Digital Art</a></h4>
+                                    <h5><a href="collection-detail.html">Collection name</a></h5>
+                                </div>
+                                <div class="right">
+                                    <span><i class="fab fa-ethereum"></i> 2.50</span>
+                                </div>
+                                <div class="bottom">
+                                    <button>Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="load-more"><button>Load more</button></div>
+                    </section>
+                    <section id="content3">
+                        <div class="nft-frontend-art">
+                            <a href="nft-fixed.html"><img src="images/default-image.png"></a>
+                            <span class="favorite-nft"><i class="far fa-heart"></i> 358</span>
+                            <div class="nft-frontend-section">
+                                <div class="left">
+                                    <h4><a href="nft-fixed.html">Amazing Digital Art</a></h4>
+                                    <h5><a href="collection-detail.html">Collection name</a></h5>
+                                </div>
+                                <div class="right">
+                                    <span><i class="fab fa-ethereum"></i> 2.50</span>
+                                </div>
+                                <div class="bottom">
+                                    <button>Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nft-frontend-art">
+                            <a href="nft-fixed.html"><img src="images/default-image.png"></a>
+                            <span class="favorite-nft"><i class="far fa-heart"></i> 358</span>
+                            <div class="nft-frontend-section">
+                                <div class="left">
+                                    <h4><a href="nft-fixed.html">Amazing Digital Art</a></h4>
+                                    <h5><a href="collection-detail.html">Collection name</a></h5>
+                                </div>
+                                <div class="right">
+                                    <span><i class="fab fa-ethereum"></i> 2.50</span>
+                                </div>
+                                <div class="bottom">
+                                    <button>Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nft-frontend-art">
+                            <a href="nft-fixed.html"><img src="images/default-image.png"></a>
+                            <span class="favorite-nft"><i class="far fa-heart"></i> 358</span>
+                            <div class="nft-frontend-section">
+                                <div class="left">
+                                    <h4><a href="nft-fixed.html">Amazing Digital Art</a></h4>
+                                    <h5><a href="collection-detail.html">Collection name</a></h5>
+                                </div>
+                                <div class="right">
+                                    <span><i class="fab fa-ethereum"></i> 2.50</span>
+                                </div>
+                                <div class="bottom">
+                                    <button>Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="load-more"><button>Load more</button></div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of this section -->
+
+
+
+    <!-- Recent Collection Section -->
+    <!--<section class="upcoming-drops">
+	<div class="panel">
+    	<h3><span>Recent</span><br>Collections</h3>
+        
+        <div class="collection-block">
+        	<div class="coll-image"><a href="collection-detail.html"><img src="images/default-image.png" /></a></div>
+            <div class="content">
+            	<div class="left"><img src="images/default-image.png" /></div>
+                <div class="right">
+                	<h4><a href="collection-detail.html">Collection Name</a></h4>
+                    <h5>by venlore</h5>
+                    <span>50 items</span>
+                </div>
+            </div>
+        </div>
+        <div class="collection-block">
+        	<div class="coll-image"><a href="collection-detail.html"><img src="images/default-image.png" /></a></div>
+            <div class="content">
+            	<div class="left"><img src="images/default-image.png" /></div>
+                <div class="right">
+                	<h4><a href="collection-detail.html">Collection Name</a></h4>
+                    <h5>by venlore</h5>
+                    <span>50 items</span>
+                </div>
+            </div>
+        </div>
+        <div class="collection-block">
+        	<div class="coll-image"><a href="collection-detail.html"><img src="images/default-image.png" /></a></div>
+            <div class="content">
+            	<div class="left"><img src="images/default-image.png" /></div>
+                <div class="right">
+                	<h4><a href="collection-detail.html">Collection Name</a></h4>
+                    <h5>by venlore</h5>
+                    <span>50 items</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="load-more"><button>View more</button></div>
+        
+    </div>
+</section>-->
+
+    <!-- Footer -->
+    <footer>
+        <div class="panel">
+            <div class="footer-top">
+                <div class="first">
+                    <img src="images/logo.png" />
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis in justo non faucibus.
+                        Praesent leo odio, dignissim vitae urna eget, congue molestie nulla. Vivamus ac ipsum finibus.
+                    </p>
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis in justo non faucibus.
+                        Praesent leo odio, dignissim vitae urna eget, congue molestie nulla. Vivamus ac ipsum finibus.
+                    </p> -->
+                </div>
+                <div class="second">
+                    <h6>Marketplace</h6>
+                    <ul>
+                        <li><a href="">All Collections</a></li>
+                        <li><a href="">Music</a></li>
+                        <li><a href="">Paintings</a></li>
+                        <li><a href="">Photographs</a></li>
+                        <li><a href="">Upcoming Drops</a></li>
+                    </ul>
+                </div>
+                <div class="second">
+                    <h6>Resources</h6>
+                    <ul>
+                        <li><a href="">Disclaimer</a></li>
+                        <li><a href="">Terms of use</a></li>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Cookie policy</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">FAQ / Help</a></li>
+                    </ul>
+                </div>
+                <div class="third">
+                    <h6>Join community</h6>
+
+                    <a href="" target="_blank"><i class="fab fa-twitter"></i></a><a href="" target="_blank"><i
+                            class="fab fa-discord"></i></a><a href="" target="_blank"><i
+                            class="fab fa-instagram"></i></a><a href="" target="_blank"><i
+                            class="fab fa-medium"></i></a><a href="" target="_blank"><i class="fab fa-github"></i></a>
+
+                    <span>Join our mailing list to stay updated with our new features and NFTs drops.</span>
+                    <input type="email" placeholder="Your email address"><button><i
+                            class="fas fa-arrow-right"></i></button>
+
+                </div>
+            </div>
+            <div class="footer-bottom">Copyright &copy; (P) 2022 <a href="">TABOU1 Inc.</a></div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
